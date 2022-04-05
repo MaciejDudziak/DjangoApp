@@ -1,0 +1,23 @@
+{% load static %}
+<html>
+    <head>
+        <title>Strona kozakow najwiekszych</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet" type = "text/css">
+        <link rel="stylesheet" href="{% static 'css/apka.css' %}">
+    </head>
+    <body>
+        <div>
+            <h1> Strona kozakow najwiekszych</h1>
+        </div>
+            {% for x in posts %}
+                <div class = "title">
+                    <h2><a href="">{{ x.title }}</a></h2>
+                </div>
+                <div class = "post">
+                    <p>{{ x.text|linebreaksbr }}</p>
+                </div>
+            {% endfor %}
+    </body>
+</html>

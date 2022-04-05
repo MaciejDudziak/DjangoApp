@@ -1,0 +1,24 @@
+h1 a, h2 a {
+    color: #34c200;
+    font-family:'Goldman';
+}
+body {
+    padding-left: 15px;
+}
+.title {
+    background-color: #C25100;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Goldman', cursive;
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post{
+    color: #e20c0c;
+}
